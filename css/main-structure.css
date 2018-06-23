@@ -1,0 +1,219 @@
+body {
+  background-color: white;
+}
+
+/*Nav*/
+#nav {
+  width: 100%;
+  height: 48px;
+  border-bottom: 2px solid #D5A021;
+  position: fixed;
+  z-index: 49;
+  background-color: white;
+}
+
+
+/*Logo*/
+#logo {
+  margin-top: 9px;
+}
+
+/*Browswer Nav Links*/
+#nav-links {
+  margin-top: 13px;
+  margin-bottom: 0px;
+  list-style-type: none;
+}
+
+#nav-links li {
+  display: none;
+  margin-right: 10px;
+}
+
+#nav-links a {
+  text-decoration: none;
+  color: #484848;
+}
+
+/*Mobile Menu*/
+
+#mobile-menu-open, #mobile-menu-close {
+  margin-top: 5px;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+#mobile-menu-close {
+  color: #D5A021;
+}
+
+#mobile-menu-list {
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+}
+
+#mobile-menu-links {
+  list-style: none;
+}
+
+#mobile-menu-links a {
+  text-decoration: none;
+  color: #222;
+}
+
+#mobile-menu-links a:hover {
+  text-decoration: none;
+  color: #D39B46;
+}
+
+
+/*Main Content*/
+#main-content {
+  padding-top: 48px;
+}
+
+/*First Jumbotron*/
+#welcome-div {
+background-image: url("../img/coffee1.jpg");
+background-size: cover;
+padding: 0;
+color: white;
+}
+
+.img-haze{
+  background: rgba(39,41,50,0.7);
+  width: 100%;
+  height: 325px;
+  z-index: 2;
+  padding: 0;
+}
+
+/*How Things Work*/
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+#how-title{
+  font-weight: bold;
+}
+
+.how-icons{
+  max-width: 100px;
+  margin-bottom: 15px
+}
+
+/*Second Jumbotron*/
+#tron-2{
+  background-color: #364652;
+  color: white;
+}
+
+#tron-3{
+  background-color: #272932;
+  color: white;
+  height: 180px;
+  width: 100%;
+}
+
+.cof-img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/*Buttons*/
+/*Subscribe*/
+#sub-button {
+  color: white;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: 2px solid #43AA8B;
+  cursor:pointer;
+  overflow: hidden;
+  padding: 10px 40px
+}
+
+#sub-button:hover{
+  background-color: rgba(67,170,139,0.8);
+  border-color: rgba(67,170,139,0.8);
+}
+
+/*Featured and Learn*/
+#featured-btn {
+  color: white;
+  cursor:pointer;
+  overflow: hidden;
+  padding: 6px 30px;
+  border: 2px solid #43AA8B;
+  background: #43AA8B;
+}
+
+#featured-btn:hover {
+  background-color: rgba(67,170,139,0.9);
+  border-color: rgba(67,170,139,0.9);
+}
+
+/*Footer*/
+
+#footer-list{
+  list-style: none;
+}
+
+#footer-list a{
+  text-decoration: none;
+  color: white;
+}
+
+/*Utility */
+.gold, .cof-card-title {
+  color: #D5A021;
+}
+
+.font-open, #featured-btn, #how-title, .cof-card-text{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.font-nunito, #footer-list, .cof-card-title, #nav-links a, .coffee-logo{
+  font-family: 'Nunito', sans-serif;
+}
+
+
+/*When larger than tablet*/
+@media (min-width: 768px) {
+  #mobile-menu-open {
+    display: none;
+  }
+
+  #nav {
+    position: static;
+  }
+
+  #nav-links li {
+    display: inline;
+  }
+
+  #main-content {
+    padding-top: 0px;
+  }
+
+  #sub-button{
+    margin-top: 30px;
+  }
+
+}
+
+
+
+
